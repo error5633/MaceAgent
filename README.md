@@ -46,7 +46,7 @@ MACEAGENT — один `.ts`-файл, который читает и прави
 ### Windows
 
 ```powershell
-git clone https://github.com/ТВОЙ_НИК/maceagent.git
+git clone https://github.com/error5633/MaceAgent
 cd maceagent
 .\install.bat
 ```
@@ -58,7 +58,7 @@ cd maceagent
 ### Linux / macOS
 
 ```bash
-git clone https://github.com/ТВОЙ_НИК/maceagent.git
+git clone https://github.com/error5633/MaceAgent
 cd maceagent
 chmod +x install.sh
 ./install.sh
