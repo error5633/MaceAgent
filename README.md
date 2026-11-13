@@ -6,7 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-a78bfa.svg)](./LICENSE)
 
-[Возможности](#возможности) · [Быстрый старт](#быстрый-старт) · [Настройка](#настройка) · [Команды](#команды) · [Проблемы](#проблемы)
+[Возможности](#возможности) · [Быстрый старт](#быстрый-старт) · [Удаление](#удаление) · [Настройка](#настройка) · [Команды](#команды) · [Проблемы](#проблемы)
 
 </div>
 
@@ -74,6 +74,36 @@ cp maceagent.ts ~/.local/share/maceagent/
 cd ~/.local/share/maceagent
 echo "GEMINI_API_KEY=AIzaSy..." > .env
 bun maceagent.ts
+```
+
+---
+
+## Удаление
+
+### Linux / macOS
+
+```bash
+bash uninstall.sh
+```
+
+### Windows
+
+```powershell
+.\uninstall.bat
+```
+
+Удаляет `maceagent.ts`, launcher и папку с `.env`. Перед удалением предложит сохранить ключи в `~/maceagent.env.backup` (или `%USERPROFILE%\maceagent.env.backup`).
+
+Ручное удаление:
+
+```bash
+rm -rf ~/.local/share/maceagent ~/.local/bin/maceagent
+# и убери строку "# MACEAGENT PATH" из ~/.bashrc / ~/.zshrc / ~/.profile
+```
+
+```powershell
+rmdir /S /Q "%LOCALAPPDATA%\maceagent"
+# и убери %LOCALAPPDATA%\maceagent\bin из PATH в переменных среды
 ```
 
 ---
